@@ -481,6 +481,57 @@ a:focus {
 }
 
 /*
+    Component: footer
+    ---
+    Main footer of the website
+*/
+
+.c-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-footer__logo {
+    flex-basis: 100%;
+}
+
+.c-footer__nav {
+    flex-basis: 30%;
+}
+
+@media (min-width: 768px) {
+    .c-footer {
+        justify-content: center;
+    }
+
+    .c-footer__logo {
+        display: block;
+        text-align: center;
+    }
+
+    .c-footer__nav {
+        display: block;
+        flex-basis: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .c-footer {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .c-footer__logo {
+    }
+
+    .c-footer__logo .c-logo {
+    }
+
+    .c-footer__nav {
+    }
+}
+
+/*
     Component: Lead
     ---
     Lead type treatments to style everything that differs from standard typography elements
